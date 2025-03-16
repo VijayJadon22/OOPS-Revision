@@ -1,4 +1,4 @@
-package src;
+package src.basics;
 
 class Person {
     String name;
@@ -33,6 +33,10 @@ class Developer extends Person {
     Developer(String name, int age) {
         super(name, age);
     }
+
+    void walk() {
+        System.out.println("Developer " + name + " is walking");
+    }
 }
 
 public class MainClass {
@@ -47,5 +51,10 @@ public class MainClass {
         p1.walk(20);
         p2.eat();
         System.out.println(Person.count);
+
+        Developer d1 = new Developer("Anish", 25);
+        d1.eat();
+        d1.walk();
+        d1.walk(35);
     }
 }
