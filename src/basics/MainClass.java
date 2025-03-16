@@ -1,5 +1,7 @@
 package src.basics;
 
+import src.encapsulation.EncapsulationIntro;
+
 class Person {
     String name;
     int age;
@@ -41,20 +43,24 @@ class Developer extends Person {
 
 public class MainClass {
     public static void main(String[] args) {
-        Person p1 = new Person();
-        p1.name = "Arun";
-        p1.age = 12;
-        System.out.println(p1);
+        // Person p1 = new Person();
+        // p1.name = "Arun";
+        // p1.age = 12;
+        // System.out.println(p1);
 
-        Person p2 = new Person("Shivam", 24);
-        // p1.walk();
-        p1.walk(20);
-        p2.eat();
-        System.out.println(Person.count);
+        // Person p2 = new Person("Shivam", 24);
+        // // p1.walk();
+        // p1.walk(20);
+        // p2.eat();
+        // System.out.println(Person.count);
 
-        Developer d1 = new Developer("Anish", 25);
-        d1.eat();
-        d1.walk();
-        d1.walk(35);
+        // Developer d1 = new Developer("Anish", 25);
+        // d1.eat();
+        // d1.walk();
+        // d1.walk(35);
+
+
+        EncapsulationIntro obj = new EncapsulationIntro();
+        obj.doWork();
     }
 }
