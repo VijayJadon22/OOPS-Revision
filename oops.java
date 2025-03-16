@@ -21,10 +21,21 @@ class Student {
     String name;
     int age;
 
-    
+    public void printInfo(String name) {
+        System.out.println(name);
+    }
+
+    public void printInfo(int age) {
+        System.out.println(age);
+    }
+
+    public void printInfo(String name, int age) {
+        System.out.println(name + " " + age);
+    }
+
     // Non paramterized constructor
     Student() {
-    System.out.println("Student constructor invoked");
+        System.out.println("Student constructor invoked");
     }
 
     // // Paramterized constructor
@@ -35,14 +46,14 @@ class Student {
     // }
 
     Student(Student s) {
-    System.out.println("Inside Copy constructor");
-    this.name = s.name;
-    this.age = s.age;
+        System.out.println("Inside Copy constructor");
+        this.name = s.name;
+        this.age = s.age;
     }
 
     public void printInfo() {
-    System.out.println("Name is: " + this.name);
-    System.out.println("Age is: " + this.age);
+        System.out.println("Name is: " + this.name);
+        System.out.println("Age is: " + this.age);
     }
 }
 
@@ -52,7 +63,8 @@ public class Oops {
         Student s1 = new Student();
         s1.name = "Aman";
         s1.age = 26;
-        Student s2 = new Student(s1);
-        s2.printInfo();
+        s1.printInfo(s1.age);
+        s1.printInfo(s1.name);
+        s1.printInfo(s1.name, s1.age);
     }
 }
