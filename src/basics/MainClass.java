@@ -61,6 +61,8 @@ public class MainClass {
 
 
         EncapsulationIntro obj = new EncapsulationIntro();
+        EncapsulationIntro obj1 = new EncapsulationIntro();
         obj.doWork();
+        obj1.doWork();
     }
 }
